@@ -2,6 +2,7 @@ extends ./layout.jade
 
 block body
   p You have added a new todo! #{todo.id}: #{todo.title}
+<<<<<<< HEAD
 
   p
     | Your id is
@@ -10,5 +11,12 @@ block body
   if todo.id % 2
     p Your id is odd!
 
+=======
+  p
+    | Your id is 
+    strong= todo.id
+  if todo.id % 2
+    p Your id is odd!
+>>>>>>> betamore/master
   else
     p Your id is even!
