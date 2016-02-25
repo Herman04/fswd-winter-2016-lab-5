@@ -1,0 +1,14 @@
+extends ./layout.jade
+
+block body
+  p You have added a new todo! #{todo.id}: #{todo.title}
+
+  p
+    | Your id is
+    strong= todo.id
+    
+  if todo.id % 2
+    p Your id is odd!
+
+  else
+    p Your id is even!
